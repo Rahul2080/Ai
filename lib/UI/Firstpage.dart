@@ -26,18 +26,23 @@ class _FirstpageState extends State<Firstpage> {
             SizedBox(
               height: 35.h,
             ),
-            TextField(
-              style: TextStyle(color: Colors.white),
-              controller: controller,
-              decoration: InputDecoration(
-                hintText: "Message",
-                hintStyle: TextStyle(color: Colors.white),
-                focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(30)),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                  borderRadius: BorderRadius.circular(30),
+            Padding(
+              padding: const EdgeInsets.only(left: 15,right: 15),
+              child: SizedBox(height: 33.h,
+                child: TextField(
+                  style: TextStyle(color: Colors.white),
+                  controller: controller,
+                  decoration: InputDecoration(
+                    hintText: "Message",
+                    hintStyle: TextStyle(color: Colors.white),
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                        borderRadius: BorderRadius.circular(30)),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
                 ),
               ),
             ),
